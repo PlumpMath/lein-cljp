@@ -1,7 +1,16 @@
 
-(ns leiningen.cljpc)
+(ns leiningen.cljpc
+  (:use clj-php.core))
+
+(defn- default-path
+  [project]
+  (format "src/%s/core.cljp"
+          (:name project)))
 
 (defn cljpc
-  [project]
-  (println "Hello"))
+  "Compile the specified path, or the default"
+  [project & args]
+  (let [path (first args)
+        path (if (nil? path) (default-path project) path)]
+    (println (compile-cljp path))))
 
