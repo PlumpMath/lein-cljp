@@ -1,7 +1,9 @@
 
 # lein-cljp
 
-A Leiningen plugin for compiling ClojurePHP.
+A Leiningen 2 plugin for compiling ClojurePHP.
+
+*NB:* Only works with Leiningen 2.0
 
 ## Usage
 
