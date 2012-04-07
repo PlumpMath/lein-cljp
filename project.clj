@@ -1,7 +1,5 @@
 
-(defproject lein-cljp "0.0.2"
+(defproject lein-cljp "0.0.3"
   :description "Leiningen plugin to compile ClojurePHP"
-  :eval-in-leiningen true
-  :dependencies [[org.clojure/clojure "1.3.0"]
-                 [clj-php "0.0.2"]])
+  :dependencies [[clj-php "0.0.4"]])
 
