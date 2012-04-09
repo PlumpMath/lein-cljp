@@ -14,6 +14,6 @@
   (let [path (first args)
         path (if (nil? path) (default-path project) path)]
     (eval-in-project (update-in project [:dependencies]
-                                conj ['clj-php 0.0.6])
+                                conj ['clj-php "0.0.6"])
        `(println (compile-cljp ~path)))))
 
